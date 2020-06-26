@@ -2,6 +2,7 @@
   "name": "socketcluster-client",
   "description": "SocketCluster JavaScript client",
   "version": "16.0.1",
+  "main": "index.js",
   "homepage": "https://socketcluster.io/",
   "contributors": [
     {
@@ -13,10 +14,7 @@
     "type": "git",
     "url": "git://github.com/SocketCluster/socketcluster-client.git"
   },
-  "scripts": {
-    "build": "gulp browserify; gulp minify",
-    "test": "mocha --reporter spec --timeout 3000 --slow 3000"
-  },
+  "scripts": {},
   "keywords": [
     "websocket",
     "realtime",
@@ -30,7 +28,7 @@
     "buffer": "^5.2.1",
     "clone-deep": "^4.0.1",
     "linked-list": "^0.1.0",
-    "querystring": "^0.2.0",
+    "query-string": "^6.13.1",
     "sc-errors": "^2.0.1",
     "sc-formatter": "^3.0.2",
     "stream-demux": "^8.0.0",

@@ -1,12 +1,9 @@
-const AGClientSocket = require('./lib/clientsocket');
-const factory = require('./lib/factory');
+import AGClientSocket from './lib/clientsocket';
+import factory from './lib/factory';
 const version = '16.0.1';
 
-module.exports.factory = factory;
-module.exports.AGClientSocket = AGClientSocket;
-
-module.exports.create = function (options) {
+const create = function (options) {
   return factory.create({...options, version});
 };
 
-module.exports.version = version;
+export default { create, factory, AGClientSocket, version };
